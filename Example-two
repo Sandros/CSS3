@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+	<style>
+	
+	*{
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	body  {
+		background: #eee;	
+		overflow-x: hidden;		
+	}
+	h2, h3 {
+		margin: 0.5em 0 ;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	#menu2 {
+		position: absolute;
+		width: 100%;
+		top: -140px;		
+		height: 140px;
+		background: #777;
+		z-index: 140;
+		-webkit-transition: top 0.2s ease;
+		-moz-transition: top 0.2s ease;
+		transition: top 0.2s ease;
+	}
+	
+	#content {		
+		position: relative;		
+		width: 98%;
+		height: 98%;
+		background: #eee;
+		padding: 1%;
+		left: 0;
+		-webkit-transition: top 0.2s ease;
+		-moz-transition: top 0.2s ease;
+		transition: top 0.2s ease;		
+	}
+
+	#content label {
+		background: orange;
+		padding: .5rem;
+		border-radius: .2rem;
+		display: block;
+		margin: 1%;
+		width: 80px;
+	}
+	
+/* Important for css3 toggle functionalities */
+	
+	input[type=checkbox] {
+		position: absolute;				
+		top: -9999px;
+		left: -9999px;	
+	}
+	
+	
+	#toggle-2:checked  ~ #menu2 {
+		top: 0;
+		-webkit-transition: left 0.2s ease;
+		-moz-transition: left 0.2s ease;
+		transition: left 0.2s ease;	
+	}
+	#toggle-2:checked  ~ #content {
+		position: relative;
+		width: 100%;
+		top: 140px;
+		-webkit-transition: top 0.2s ease;
+		-moz-transition: top 0.2s ease;
+		transition: top 0.2s ease;
+	}
+
+		
+</style>
+</head>
+	<body>
+
+		<input id="toggle-2" type="checkbox">
+		
+	
+		<div id="menu2">
+			<h3>Menu 2</h3>
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About</a></li>
+			</ul>		
+		</div>
+		
+		<div id="content">
+			
+			<label for="toggle-2">&#9776; Menu 2</label>
+			
+					<h2>Toggle by using CSS3 – no JavaScript needed</h2>
+		<p>by Robert Wieduwilt</p>
+		<p>The label element may be used to attach information to controls. 
+		The for attribute associates a label with another control explicitly 
+		that can be used for a modern web navigation as a toggle effect.</p>
+		<h3>Browser Support:</h3>	
+			<ul>
+				<li>Opera</li>
+				<li>Chrome</li>
+				<li>Firefox</li>
+				<li>IE up to version 9</li>
+			</ul>
+		</p>		
+		<p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen genieße.</p>
+		<p>Ich bin allein und freue mich meines Lebens in dieser Gegend, die für solche Seelen geschaffen ist wie die meine.</p>
+		<p>Ich bin so glücklich, mein Bester, so ganz in dem Gefühle von ruhigem Dasein versunken, daß meine Kunst darunter leidet.</p>
+		<p>Ich könnte jetzt nicht zeichnen, nicht einen Strich, und bin nie ein größerer Maler gewesen als in diesen Augenblicken.</p>
+		<p>Wenn das liebe Tal um mich dampft, und die hohe Sonne an der Oberfläche der undurchdringlichen Finsternis meines Waldes ruht, und nur einzelne Strahlen sich in das innere Heiligtum stehlen, ich dann im hohen Grase am fallenden Bache liege, und näher an der Erde tausend mannigfaltige Gräschen mir merkwürdig werden; wenn ich das Wimmeln der kleinen Welt zwischen Halmen, die unzähligen, unergründlichen Gestalten der Würmchen, der Mückchen näher an meinem Herzen fühle, und fühle die Gegenwart des Allmächtigen, der uns nach seinem Bilde schuf, das Wehen des Alliebenden, der uns in ewiger Wonne schwebend trägt und erhält; mein Freund!</p>
+		<p>Wenn's dann um meine Augen dämmert, und die Welt um mich her und der Himmel ganz in meiner Seele ruhn wie die Gestalt einer</p>
+		</div>	
+			
+			
+		</div>			
+
+	
+</body>
+</html>
